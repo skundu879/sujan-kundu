@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient REGISTRATION</title>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    </head>
+    
+    <body background="b5.jpg">
+    	 <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Online Clinic System</a>
+      <img src="images.jpg" class="img-circle" alt="Cinque Terre" width="80" height="50">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">rule 1-1</a></li>
+          <li><a href="#">Parulege 1-2</a></li>
+          <li><a href="#">Parulege 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+     <!--  <li><a href="patient_registration.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>  -->
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a><ul class="dropdown-menu">
+          <li><a href="doctor_login.html">Doctor login</a></li>
+          <li><a href="patient_login.html">Patient login</a></li>
+          <li><a href="AdminLogin.jsp">Admin login</a></li>
+        </ul>
+          </li>
+    </ul>
+    </div>
+  </div>
+</nav><br>
+    
+     <div class="row">
+                <div class="col-lg-12">
+                     <div class="page-header">
+                         <h1 class="text-center" style="color:red;"><b><marquee >Please Enter Your Details </marquee></b></h1>
+          </div>
+                    <!--<h1 class="page-header">Online Registration from</h1>-->
+         
+            </div>
+        <div class="modal-dialog" >
+            <div class="col-lg-12 modal-header">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                  <b style="color:green">  Patient Registration  </b>
+                    </div>
+                <div class="panel-body">
+                    <div class="col">
+                        <div class="col-lg-12">
+                            <div role="form">
+         <div class="col-lg-6">
+        <form method="post" action="Register">
+        <div class="form-group">
+        <label for="email">First Name:</label>
+         <input style="width:400px;" class="form-control" type="text" name="Fname" placeholder="Enter First Name" >
+            </div>
+            <div style="width:400px;" class="form-group">
+          <label for="email">Last Name:</label>
+         <input class="form-control" type="text" name="Lname" placeholder="Enter Last Name">
+            </div>
+                <div class="form-group">
+      <label>Gender</label>
+        <select style="width:auto;" class="form-control" name="Gender">
+    <option value="Male">Male</option>
+	<option value="Female">Female</option>
+
+</select>
+            </div>
+       <div style="width:300px;" class="form-group">
+        <label>Contact No.</label>
+        <input maxlength="14" class="form-control" style="padding-left:15px;" name="Mobile">      
+        </div>
+        <div style="width:400px;" class="form-group">
+      <label for="email">Email Id:</label>
+        <input class="form-control" type="email" name="Mail" placeholder="example@gmail.com">
+        </div>
+             <div style="width:200px;" class="form-group">
+      <label for="email">Age:</label>
+        <input class="form-control" type="number" name="Age" placeholder="Age">
+        </div>
+        <div class="form-group">
+         <label>Date of Birth.</label>
+            <input type="date" class="form-control" data-provide="datepicker" name="Dob">
+                <span class="bv wt"></span>
+                </div>
+             <div class="form-group">
+                                        <table class="table table-hover">
+                                             <label for="yop">Create Password:</label>
+         <input style="width:auto;" class="form-control" type="password" name="Pass" placeholder="Enter Password">
+                                            </table>
+                                        </div>
+            
+            <input type="submit" value="Submit1" id="submit" class="btn btn-primary button-loading" data-loading-text="Loading...">
+                                
+           <a href="index.html"><input type="button" class="btn btn-primary" value="Exit"></a>
+                
+             </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br><div class="navbar navbar-inverse navbar-fixed-bootom">
+ <div class="container">
+ <p style="color:#ffff80 " class="text-center">Copyright @ Online Clinic System 2017</p>
+  </div>
+ </div>
+    </body>
+    
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Doctor Login Form</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="a snippet of a bootstrap login form with fully responsive supported. Feel free to test and report a bugs to me :)">
+		<meta name="author" content="arianraptor">
+
+		<!-- Open Graph -->
+
+		<meta property="og:title" content="Bootstrap Responsive Login Form" /> 
+		<meta property="og:image" content="http://arianraptor.com/bootstrap-responsive-login-form/imgsrc.png" /> 
+		<meta property="og:description" content="a snippet of a bootstrap login form with fully responsive supported. Feel free to test and report a bugs to me :)" /> 
+		<meta property="og:url" content="http://arianraptor.com/bootstrap-responsive-login-form/">
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" href="css/bootstrap-custom.css">
+
+
+		<!-- HTML5 Shim, for IE6-IE8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       	<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-38395785-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+	</head>
+    <body background="b1.jpg">
+  <div id="wrap">
+	<div class="container">
+		<div class="row">
+			<div class="span3 hidden-phone"></div>
+			<div class="span6" id="form-login">
+				<form action="DoctorLogin.jsp" method="post" class="form-horizontal well">
+					<fieldset>
+                        <legend class="text-center"><h1>Doctor Login</h1></legend>
+						<div class="control-group">
+							<div class="control-label">
+								<label>Username</label>
+							</div>
+							<div class="controls">
+								<input type="text" name="doctorid" placeholder="example@youremail.com" class="input-large">
+							</div>
+						</div>
+
+						<div class="control-group">
+							<div class="control-label">
+								<label>Password</label>
+							</div>
+							<div class="controls">
+								<input type="password"  name="doctorpass"placeholder="type your password" class="input-large">
+
+								<!-- Help-block example -->
+								<!-- <span class="help-block">Example block-level help text here.</span> -->
+							</div>
+						</div>
+                        <legend>
+                            <div class="col-md-7">
+                             <div class="checkbox">
+                    <label style="color:#000000;"><input type="checkbox">Remember me</label>
+                    </div>
+                            </div>
+                            </legend>
+						<div class="control-group">
+							<div class="controls">
+
+							<input type="submit" id="submit" value="Sign in" class="btn btn-primary button-loading" data-loading-text="Loading...">
+
+							<a href="changePassworddoctor.jsp"> <button type="button" class="btn btn-secondary button-loading" data-loading-text="Loading...">Forgot Password</button></a>
+
+							</div>
+						</div>
+					</fieldset>
+				</form>
+            </div>
+        </div>
+      </div>
+        </div>
+    </body>

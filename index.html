@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Online Clinic</title>
+      <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type ="text/css" src="style.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+    </head>
+    <!-- header  start -->
+    <body style="height: 100%; width: 100%;">
+    	 <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">Online Clinic System</a>
+      <img src="images.jpg" class="img-circle" alt="Cinque Terre" width="80" height="50">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">rule 1-1</a></li>
+          <li><a href="#">Parulege 1-2</a></li>
+          <li><a href="#">Parulege 1-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+      <li><a href="patient_registration.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a><ul class="dropdown-menu">
+          <li><a href="doctor_login.html">Doctor login</a></li>
+          <li><a href="patient_login.html">Patient login</a></li>
+          <li><a href="AdminLogin.jsp">Admin login</a></li>
+        </ul>
+          </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<!-- header  end -->
+<body>
+
+<div class="w3-container">
+ <br><br> <h1 class="text-center" style="text-shadow: 3px 2px  red; font-size: 60px;">Online Clinic System</h1>
+  <p class="text-center"style="font-size: 20px;" >Elegant web-based EMR software that enables</p>
+<p class="text-center" style="font-size: 18px;">seamless clinical collaboration.</p>
+</div>
+
+<div class="w3-content w3-display-container" style="max-width:1280px" style="max-height:720px">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="d1.jpg" style="width:100%">
+  <img class="mySlides" src="d2.jpg" style="width:100%">
+  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%" style="height:100%" >
+    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+ <br><div class="navbar navbar-inverse navbar-fixed-bootom">
+ <div class="container">
+ <p style="color:#ffff80 " class="text-center">Copyright @ Online Clinic System 2017</p>
+  </div>
+ </div>
+    </body>
+    </html>
